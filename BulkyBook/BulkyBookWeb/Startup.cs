@@ -1,4 +1,6 @@
-using BulkyBookWeb.Data;
+using BulkyBook.DataAccess;
+using BulkyBook.DataAccess.Repository;
+using BulkyBook.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +25,7 @@ namespace BulkyBookWeb
             services.AddControllersWithViews();
             services.AddDbContext<ApplicationDbContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddRazorPages().AddRazorRuntimeCompilation();
         }
 

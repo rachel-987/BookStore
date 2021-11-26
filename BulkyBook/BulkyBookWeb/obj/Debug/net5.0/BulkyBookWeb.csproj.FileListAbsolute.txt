@@ -435,3 +435,7 @@ D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework C
 D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBookWeb\obj\Debug\net5.0\ref\BulkyBookWeb.dll
 D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBookWeb\obj\Debug\net5.0\BulkyBookWeb.pdb
 D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBookWeb\obj\Debug\net5.0\BulkyBookWeb.genruntimeconfig.cache
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBookWeb\bin\Debug\net5.0\BulkyBook.DataAccess.dll
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBookWeb\bin\Debug\net5.0\BulkyBook.Models.dll
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBookWeb\bin\Debug\net5.0\BulkyBook.DataAccess.pdb
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBookWeb\bin\Debug\net5.0\BulkyBook.Models.pdb

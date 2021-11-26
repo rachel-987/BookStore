@@ -1,0 +1,15 @@
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\bin\Debug\net5.0\BulkyBook.Ultility.deps.json
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\bin\Debug\net5.0\BulkyBook.Ultility.runtimeconfig.json
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\bin\Debug\net5.0\BulkyBook.Ultility.runtimeconfig.dev.json
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\bin\Debug\net5.0\BulkyBook.Ultility.dll
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\bin\Debug\net5.0\ref\BulkyBook.Ultility.dll
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\bin\Debug\net5.0\BulkyBook.Ultility.pdb
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\obj\Debug\net5.0\BulkyBook.Ultility.csproj.AssemblyReference.cache
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\obj\Debug\net5.0\BulkyBook.Ultility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\obj\Debug\net5.0\BulkyBook.Ultility.AssemblyInfoInputs.cache
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\obj\Debug\net5.0\BulkyBook.Ultility.AssemblyInfo.cs
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\obj\Debug\net5.0\BulkyBook.Ultility.csproj.CoreCompileInputs.cache
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\obj\Debug\net5.0\BulkyBook.Ultility.dll
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\obj\Debug\net5.0\ref\BulkyBook.Ultility.dll
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\obj\Debug\net5.0\BulkyBook.Ultility.pdb
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Ultility\obj\Debug\net5.0\BulkyBook.Ultility.genruntimeconfig.cache

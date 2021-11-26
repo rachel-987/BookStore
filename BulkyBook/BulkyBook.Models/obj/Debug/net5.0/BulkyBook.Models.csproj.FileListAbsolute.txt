@@ -1,0 +1,12 @@
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\bin\Debug\net5.0\BulkyBook.Models.deps.json
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\bin\Debug\net5.0\BulkyBook.Models.dll
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\bin\Debug\net5.0\ref\BulkyBook.Models.dll
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\bin\Debug\net5.0\BulkyBook.Models.pdb
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.csproj.AssemblyReference.cache
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.AssemblyInfoInputs.cache
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.AssemblyInfo.cs
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.csproj.CoreCompileInputs.cache
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.dll
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\net5.0\ref\BulkyBook.Models.dll
+D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBook.Models\obj\Debug\net5.0\BulkyBook.Models.pdb
