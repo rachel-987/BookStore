@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 namespace BulkyBookWeb.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork unitOfWork;
