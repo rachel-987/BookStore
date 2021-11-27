@@ -1,5 +1,5 @@
 ﻿using BulkyBook.DataAccess.Repository.IRepository;
-using BulkyBookWeb.Models;
+using BulkyBook.Models;
 
 namespace BulkyBook.DataAccess.Repository
 {
@@ -10,7 +10,7 @@ namespace BulkyBook.DataAccess.Repository
         public CategoryRepository(ApplicationDbContext dbContext) : base(dbContext)
         {
             this.dbContext = dbContext;
-        } 
+        }
 
         public void Update(Category category)
         {

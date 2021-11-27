@@ -21,14 +21,14 @@ using BulkyBookWeb;
 #nullable disable
 #nullable restore
 #line 2 "D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBookWeb\Views\_ViewImports.cshtml"
-using BulkyBookWeb.Models;
+using BulkyBook.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e2fdcfb25a5aa737988d1c75ff5d4a96e8707399", @"/Views/Category/Delete.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d09697d079bb773944af23459be73da9390cc139", @"/Views/_ViewImports.cshtml")]
-    public class Views_Category_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<BulkyBookWeb.Models.Category>
+    public class Views_Category_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<BulkyBook.Models.Category>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("type", "hidden", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -186,7 +186,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<BulkyBookWeb.Models.Category> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<BulkyBook.Models.Category> Html { get; private set; }
     }
 }
 #pragma warning restore 1591

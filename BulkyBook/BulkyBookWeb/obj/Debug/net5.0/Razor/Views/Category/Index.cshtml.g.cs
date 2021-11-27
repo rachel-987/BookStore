@@ -21,7 +21,7 @@ using BulkyBookWeb;
 #nullable disable
 #nullable restore
 #line 2 "D:\Udemy\Build real world application using ASP.NET Core MVC, Entity Framework Core and ASP.NET Core Identity\BookStore\BulkyBook\BulkyBookWeb\Views\_ViewImports.cshtml"
-using BulkyBookWeb.Models;
+using BulkyBook.Models;
 
 #line default
 #line hidden
