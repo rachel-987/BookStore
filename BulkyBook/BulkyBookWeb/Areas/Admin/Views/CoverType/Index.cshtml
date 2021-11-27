@@ -1,6 +1,4 @@
-﻿@using BulkyBook.Models
-
-@model IEnumerable<Category>
+﻿@model IEnumerable<BulkyBook.Models.CoverType>
 @{
     ViewData["Title"] = "Index";
 }
@@ -9,12 +7,12 @@
     <div class="row pt-4">
         <div class="col-6">
             <h2 class="text-primary">
-                Category list
+                Cover Type list
             </h2>
         </div>
         <div class="col-6 text-end">
-            <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
-                <i class="bi bi-plus-circle-fill"></i> &nbsp; Create New Category
+            <a asp-controller="CoverType" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle-fill"></i> &nbsp; Create New CoverType
             </a>
         </div>
     </div>
@@ -24,14 +22,8 @@
     <thead>
         <tr>
             <th style="text-align:center">
-                Category Name
-            </th>
-            <th style="text-align:center">
-                Display Order
-            </th>
-            <th style="text-align:center">
-                Created At
-            </th>
+                Cover Type Name
+            </th> 
             <th></th>
         </tr>
     </thead>
@@ -41,19 +33,13 @@
             <tr>
                 <td width="40%" style="text-align:center">
                     @obj.Name
-                </td>
-                <td width="15%" style="text-align:center">
-                    @obj.DisplayOrder
-                </td>
-                <td width="25%" style="text-align:center">
-                    @obj.CreatedDateTime
-                </td>
+                </td> 
                 <td width="20%" style="text-align:center">
                     <div class="h-50" role="group">
-                        <a asp-controller="Category" asp-action="Update" asp-route-id="@obj.ID" style="text-decoration:none">
+                        <a asp-controller="CoverType" asp-action="Update" asp-route-id="@obj.ID" style="text-decoration:none">
                             <i class="bi bi-pencil-square"></i>&nbsp; Edit
                         </a>&nbsp;&nbsp;
-                        <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.ID" style="text-decoration:none">
+                        <a asp-controller="CoverType" asp-action="Delete" asp-route-id="@obj.ID" style="text-decoration:none">
                             <i class="bi bi-x-circle"></i>&nbsp; Delete
                         </a>
                     </div>

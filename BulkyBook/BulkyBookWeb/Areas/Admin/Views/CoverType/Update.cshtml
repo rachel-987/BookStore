@@ -1,0 +1,29 @@
+﻿@model BulkyBook.Models.CoverType
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="border-1 p-3 mt-4">
+    <form asp-action="Update" method="post">
+        <div class="row pb-2">
+            <h2 class="text-primary">
+                Update CoverType
+            </h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="ID" />
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" type="text" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div> 
+        <button type="submit" class="btn btn-primary" style="width:150px">
+            Update
+        </button>
+        <a asp-controller="CoverType" asp-action="Index" class="btn btn-secondary" style="width:150px">
+            Back to list
+        </a>
+    </form>
+</div>
