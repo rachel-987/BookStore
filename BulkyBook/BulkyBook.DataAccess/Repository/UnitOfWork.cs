@@ -1,5 +1,4 @@
 ﻿using BulkyBook.DataAccess.Repository.IRepository;
-using System;
 
 namespace BulkyBook.DataAccess.Repository
 {
@@ -12,7 +11,9 @@ namespace BulkyBook.DataAccess.Repository
             this.dbContext = dbContext;
             CategoryRepository = new CategoryRepository(dbContext);
             CoverTypeRepository = new CoverTypeRepository(dbContext);
+            ProductRepository = new ProductRepository(dbContext);
         }
+
         public ICategoryRepository CategoryRepository
         {
             get;
@@ -20,6 +21,12 @@ namespace BulkyBook.DataAccess.Repository
         }
 
         public ICoverTypeRepository CoverTypeRepository
+        {
+            get;
+            private set;
+        }
+
+        public IProductRepository ProductRepository
         {
             get;
             private set;
