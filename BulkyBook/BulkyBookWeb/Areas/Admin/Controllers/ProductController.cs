@@ -28,6 +28,8 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
             return View(/*products*/);
         }
 
+        #region Upsert Product <Update+Insert>
+
         //GET
         /// <summary>
         /// If id hasn't existed => Create new product
@@ -50,19 +52,19 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
                     Text = i.Name,
                     Value = i.ID.ToString()
                 })
-            }; 
+            };
 
             if (id == null || id == 0)
             {
-                ////Create product 
+                ////Create product
                 return View(productVm);
             }
             else
             {
                 //Update Product
+                productVm.Product = unitOfWork.ProductRepository.GetFirstOrDefault(p => p.ID == id);
+                return View(productVm);
             }
-
-            return View(productVm);
         }
 
         //POST
@@ -78,6 +80,14 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
                     string fileName = Guid.NewGuid().ToString();
                     var uploads = Path.Combine(wwwRootPath, @"images\products");
                     var extension = Path.GetExtension(file.FileName);
+                    if (productVm.Product.ImageURL != null)
+                    {
+                        var oldImagePath = Path.Combine(wwwRootPath, productVm.Product.ImageURL.TrimStart('\\'));
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
 
                     using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
                     {
@@ -86,7 +96,15 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
                     productVm.Product.ImageURL = @"\images\products\" + fileName + extension;
                 }
 
-                unitOfWork.ProductRepository.Add(productVm.Product);
+                if (productVm.Product.ID == 0)
+                {
+                    unitOfWork.ProductRepository.Add(productVm.Product);
+                }
+                else
+                {
+                    unitOfWork.ProductRepository.Update(productVm.Product);
+                }
+                //unitOfWork.ProductRepository.Add(productVm.Product);
                 unitOfWork.Save();
                 TempData["Success"] = "Category created successfully";
                 return RedirectToAction("Index");
@@ -94,7 +112,9 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
             return View(productVm);
         }
 
-        #region API Calls
+        #endregion Upsert Product <Update+Insert>
+
+        #region API Calls - Getall, DeletePOST
 
         /// <summary>
         /// Get all data and return as JSON data
@@ -103,11 +123,30 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var productList = unitOfWork.ProductRepository.GetAll();
+            var productList = unitOfWork.ProductRepository.GetAll(includeProperties: "Category,CoverType");
             return Json(new { data = productList });
         }
 
-        #endregion API Calls
+        [HttpDelete]
+        //[ValidateAntiForgeryToken] -- Nếu có cái này sẽ không xóa được T.T
+        public IActionResult Delete(int? id)
+        {
+            var product = unitOfWork.ProductRepository.GetFirstOrDefault(p => p.ID == id);
+            if (product == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
 
+            var oldImagePath = Path.Combine(webHostEnvironment.WebRootPath, product.ImageURL.TrimStart('\\'));
+            if (System.IO.File.Exists(oldImagePath))
+            {
+                System.IO.File.Delete(oldImagePath);
+            }
+            unitOfWork.ProductRepository.Remove(product);
+            unitOfWork.Save(); 
+            return Json(new { success = true, message = "Delete Successful" });
+        }
+
+        #endregion API Calls - Getall, DeletePOST
     }
 }

@@ -10,9 +10,9 @@ namespace BulkyBook.DataAccess.Repository.IRepository
     /// <typeparam name="T"></typeparam>
     public interface IRepository<T> where T : class
     {
-        T GetFirstOrDefault(Expression<Func<T, bool>> filter);
+        T GetFirstOrDefault(Expression<Func<T, bool>> filter, string includeProperties = null);
 
-        IEnumerable<T> GetAll();
+        IEnumerable<T> GetAll(string includeProperties = null);
 
         void Add(T entity);
 
