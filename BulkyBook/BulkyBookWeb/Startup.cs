@@ -1,4 +1,4 @@
-using BulkyBook.DataAccess;
+﻿using BulkyBook.DataAccess;
 using BulkyBook.DataAccess.Repository;
 using BulkyBook.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Builder;
@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace BulkyBookWeb
 {
@@ -65,11 +66,16 @@ namespace BulkyBookWeb
 
             app.UseAuthorization();
 
+             
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
+
+                //Cần có cái này. nếu không thì sẽ lỗi khi link đến trang trong identity
+                endpoints.MapRazorPages();
             });
         }
     }
